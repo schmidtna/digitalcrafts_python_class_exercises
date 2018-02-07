@@ -29,3 +29,5 @@ long_vowels = long_vowels.replace("oo", "ooooo")
 long_vowels = long_vowels.replace("uu", "uuuuu")
 
 print(long_vowels)
+
+
