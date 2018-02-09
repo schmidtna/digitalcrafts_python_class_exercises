@@ -1,11 +1,13 @@
-def fibon():
-    fib = [1, 2]
-    fib_even = []
-    while ((fib[(len(fib) - 1)]) + (fib[(len(fib)) - 2 ])) < 4000000:
-        fib.append((fib[(len(fib) - 1)]) + (fib[(len(fib)) - 2 ]))
-    for i in fib:
-        if i % 2 == 0:
-            fib_even.append(i)
+def primes(n):
+    if n<=2:
+        return []
+    sieve=[True]*(n+1)
+    for x in range(3,int(n**0.5)+1,2):
+        for y in range(3,(n//x)+1,2):
+            sieve[(x*y)]=False
+    return [2]+[i for i in range(3,n,2) if sieve[i]]
 
-    print(sum(fib_even))
-print(fibon())
+
+arr = [2, 1000]
+for i in arr:
+     print(primes(i))
