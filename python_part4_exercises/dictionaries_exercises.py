@@ -40,36 +40,36 @@
 
 # Dictionary ex 3
 
-# def letter_count(x):
+def letter_count(x):
 
-#     input_letters = {}
+    input_letters = {}
 
-#     for i in x:
-#         counting = input_letters.get(i, 0)
-#         input_letters[i] = counting + 1
+    for i in x:
+        counting = input_letters.get(i, 0)
+        input_letters[i] = counting + 1
     
-#     print(input_letters)
+    print(input_letters)
 
-# if __name__ == "__main__":
-#     letter_count("bananas")
+if __name__ == "__main__":
+    letter_count()
 
 # Dictionary ex 4
 
-# def word_count(input_para):
-#     tally_list = {}
-#     word_sets = input_para.split()
+def word_count(input_para):
+    tally_list = {}
+    word_sets = input_para.split()
     
-#     for words in word_sets:
-#         if words not in tally_list:
-#             tally_list[words] = 1
-#         else: 
-#             tally_list[words] += 1
+    for words in word_sets:
+        if words not in tally_list:
+            tally_list[words] = 1
+        else: 
+            tally_list[words] += 1
 
-#     print(tally_list)
+    print(tally_list)
 
     
 
-# if __name__ == "__main__":
-#     word_count("to be or not to be")
+if __name__ == "__main__":
+    word_count()
 
 
