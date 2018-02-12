@@ -1,2 +1,0 @@
-Here is the test file
-With some content included within it.
